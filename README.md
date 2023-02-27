@@ -1,7 +1,7 @@
 # Extended Kalman Filter Project Starter Code
 Self-Driving Car Engineer Nanodegree Program
 
-In this project I utilized a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower than the tolerance outlined in the project rubric. 
+In this project I utilized a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower than the tolerance outlined as follows: px, py, vx, vy output coordinates must have an RMSE <= [.11, .11, 0.52, 0.52] when using the file: "obj_pose-laser-radar-synthetic-input.txt" which is the same data file the simulator uses for Dataset 1.
 
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases).
 
@@ -17,17 +17,11 @@ Once the install for uWebSocketIO is complete, the main program can be built and
 
 Tips for setting up your environment can be found in the classroom lesson for this project.
 
-Note that the programs that need to be written to accomplish the project are src/FusionEKF.cpp, src/FusionEKF.h, kalman_filter.cpp, kalman_filter.h, tools.cpp, and tools.h
-
-The program main.cpp has already been filled out, but feel free to modify it.
-
 Here is the main protocol that main.cpp uses for uWebSocketIO in communicating with the simulator.
-
 
 **INPUT**: values provided by the simulator to the c++ program
 
 ["sensor_measurement"] => the measurement that the simulator observed (either lidar or radar)
-
 
 **OUTPUT**: values provided by the c++ program to the simulator
 
@@ -45,7 +39,6 @@ Here is the main protocol that main.cpp uses for uWebSocketIO in communicating w
 
 ---
 
-
 ## Basic Build Instructions
 
 1. Clone this repo.
@@ -55,9 +48,6 @@ Here is the main protocol that main.cpp uses for uWebSocketIO in communicating w
 4. Run it: `./ExtendedKF `
 
 
-
-
-
 ## Generating Additional Data
 
 This is optional!
@@ -65,10 +55,3 @@ This is optional!
 If you'd like to generate your own radar and lidar data, see the
 [utilities repo](https://github.com/udacity/CarND-Mercedes-SF-Utilities) for
 Matlab scripts that can generate additional data.
-
-
-
-
-
-
-
